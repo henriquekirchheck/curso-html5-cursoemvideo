@@ -11,10 +11,14 @@ header {
     align-items: center;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 .logo {
     display: flex;
-    width: 40%;
-    height: 40%;
+    width: 300px;
+    height: auto;
 }
 
 .credits {
@@ -34,4 +38,41 @@ header {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 500;
+}
+
+.projects {
+    padding: 5px;
+}
+
+.subproject {
+    border: 3px transparent;
+    padding: 5px;
+
+    width: 50%;
+    float: left;
+}
+
+.project-div {
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.project-header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.project-body {
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
