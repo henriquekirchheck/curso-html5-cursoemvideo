@@ -1,2 +1,2 @@
-# curso-html5-cursoemvideo-antigo
+# curso-html5-cursoemvideo
 Curso de HTML antigo do curso em video
