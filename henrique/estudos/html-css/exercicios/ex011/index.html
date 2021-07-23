@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas e audios</title>
+</head>
+<body>
+    <h2>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/pmg-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="./imagens/pmg-m.png" type="image/png">
+        <img src="./imagens/pmg-g.png" alt="Foto G">
+    </picture>
+
+    <h2>Audios</h2>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="./midia/walk-through-the-park.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta audio, <a href="./midia/walk-through-the-park.mp3" download="walk-through-the-park.mp3" type="audio/mpeg">baixe aqui o audio</a></p>
+    </audio>
+</body>
+</html>
