@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Android;
+    src: url(./fontes/idroid.otf) format("opentype");
+}
+
+:root {
+    --light-android-green: #5DE3B1;
+    --dark-android-green: #005536;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    color: var(--dark-android-green)
+}
+
+div#title {
+    color: white;
+    text-align: center;
+    width: 450px;
+}
+
+div#player {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    padding: 30px 0;
+    border-radius: 20px;
+    background-color: var(--dark-android-green);
+}
+
+div#learn-more {
+    width: 800px;
+    border-radius: 10px;
+    background-color: var(--light-android-green);
+}
+
+div#learn-more > div.title {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--dark-android-green);
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
+div#learn-more > p {
+    margin: 8px;
+}
+
+div#learn-more > .list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+div#learn-more > div.list > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+div.center-title {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding: 0 20px;
+    background-image: linear-gradient(to bottom, var(--light-android-green), var(--dark-android-green));
+}
+
+header > div.center-title > div#title > h1 {
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.664);
+}
+
+header > div.center-title > div#title > h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header > menu {
+    padding-bottom: 10px;
+}
+
+header > menu > a {
+    color: white;
+    margin-left: 1px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+header > menu > a:hover {
+    background-color: var(--light-android-green);
+    color: var(--dark-android-green);
+    transition: 0.5s;
+}
+
+main {
+    display: flex;
+    background-color: var(--light-android-green);
+    padding:10px;
+    justify-content: center;
+}
+
+main > article {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 800px;
+}
+
+main > article > h1{
+    font-family: Android;
+    margin-bottom: 10px;
+}
+
+main > article > p, main > article > div#learn-more > p{
+    text-indent: 36px;
+}
+
+main > article > p > a, main > article > div#learn-more > p > a {
+    color: var(--dark-android-green);
+    text-decoration: none;
+    background-color: #00ffa2b2;
+    border-radius: 2px;
+}
+
+main > article > p > a::after, main > article > div#learn-more > p > a::after {
+    content: "\01F517";
+    font-size: .9em;
+}
+
+main > article > p > a:hover, main > article > div#learn-more > p > a:hover{
+    text-decoration: underline;
+}
+
+main > article > h2 {
+    font-family: Android;
+    background-image: linear-gradient(to right, var(--light-android-green), white);
+    margin: 10px 0 10px 0;
+    padding: 2px 0 2px 5px;
+}
+
+main > article > picture {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-android-green);
+    color: var(--light-android-green);
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+
+footer > p > a:hover {
+    background-color: var(--light-android-green);
+    color: var(--dark-android-green);
+    transition: 0.5s;
+}
