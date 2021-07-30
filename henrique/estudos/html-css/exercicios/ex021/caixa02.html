@@ -37,6 +37,8 @@
             justify-content: center;
             gap: 5px;
             padding: 3px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.568);
+            border-radius: 0 0 5px 5px;
         }
 
         header > nav > a {
@@ -65,18 +67,26 @@
             border: 1px solid lightgray;
             text-align: center;
             margin-left: 2px;
+            border-radius: 0 10px;
+            padding: 2px;
         }
         
         main > section {
             flex: 1;
             border: 1px solid lightgray;
             margin-right: 2px;
+            border-radius: 10px 0;
+            padding: 5px;
         }
         
         main > section > .top {
             text-align: center;
             font-size: 2em;
             margin: 5px;
+        }
+
+        main > section > .info > h1 {
+            margin: 5px 0 0 69px;
         }
 
         main > section > .info > span {
@@ -91,6 +101,23 @@
             margin-top: 2px;
             align-items: center;
             justify-content: center;
+            border-radius: 5px 5px 0 0;
+        }
+
+        div#bola {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     </style>
 </head>
@@ -124,7 +151,7 @@
         
         <section id="info-content">
             <div class="top">
-                <h2>Doe para o nosso site</h2>
+                <h2>Doe para o meu site</h2>
             </div>
             <hr>
             <div class="info">
@@ -140,11 +167,15 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus iste, nam, aliquid eaque labore vel corrupti repudiandae laudantium nisi dolorum quam consequatur nemo magni numquam omnis velit commodi quibusdam non.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus iste, nam, aliquid eaque labore vel corrupti repudiandae laudantium nisi dolorum quam consequatur nemo magni numquam omnis velit commodi quibusdam non.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus iste, nam, aliquid eaque labore vel corrupti repudiandae laudantium nisi dolorum quam consequatur nemo magni numquam omnis velit commodi quibusdam non.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus iste, nam, aliquid eaque labore vel corrupti repudiandae laudantium nisi dolorum quam consequatur nemo magni numquam omnis velit commodi quibusdam non.</p>
             </div>
         </section>
     </main>
     <footer>
         <h1>Desenvolvimento por Henrique Kirch Heck</h1>
     </footer>
+    <div id="bola">
+        <p>Olá!</p>
+    </div>
 </body>
 </html>
