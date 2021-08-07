@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript aula04/ex001</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Me livrei da maldição</p>
+    <script>
+        function somar() {
+            const n1 = Number(window.prompt('Digite um numero'))
+            const n2 = Number(window.prompt('Digite outro numero'))
+            const soma = n1 + n2
+            
+            window.alert(`A soma de ${n1.toString()} e ${n2.toString()} é ${soma.toString()}`)
+        }
+    </script>
+
+    <button onClick={somar()}>Somar</button>
+</body>
+</html>
